@@ -1,0 +1,13 @@
+package org.example.lesson_3
+
+fun main() {
+    var from = "E2"
+    var to = "E4"
+
+    println("$from:$to")
+
+    from = "D2"
+    to = "D3"
+
+    println("$from:$to")
+}
