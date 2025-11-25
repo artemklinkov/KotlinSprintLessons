@@ -4,8 +4,9 @@ fun main() {
     val startHour = 9
     val startMinute = 39
     val duration = 457
-    val endHour = (startHour * 60 + startMinute + duration) / 60
-    val endMinute = (startHour * 60 + startMinute + duration) % 60
+    val minutesInHour = 60
+    val endHour = (startHour * minutesInHour + startMinute + duration) / minutesInHour
+    val endMinute = (startHour * minutesInHour + startMinute + duration) % minutesInHour
 
-    print("${"%02d".format(endHour)}:${"%02d".format(endMinute)}")
+    print("%02d:%02d".format(endHour, endMinute))
 }
