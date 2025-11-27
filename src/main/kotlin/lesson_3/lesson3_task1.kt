@@ -2,9 +2,9 @@ package org.example.lesson_3
 
 fun main() {
     val userName = "John"
-    val dayGreeting = "день"
-    val nightGreeting = "вечер"
+    var greeting = "день"
 
-    println("Добрый $dayGreeting, $userName")
-    println("Добрый $nightGreeting, $userName")
+    println("Добрый $greeting, $userName")
+    greeting = "вечер"
+    println("Добрый $greeting, $userName")
 }
