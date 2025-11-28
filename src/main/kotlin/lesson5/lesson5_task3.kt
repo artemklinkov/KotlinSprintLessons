@@ -1,7 +1,5 @@
 package org.example.lesson5
 
-import kotlin.random.Random
-
 fun main() {
     val numbers = intArrayOf(
         (0..42).random(),
