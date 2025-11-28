@@ -1,6 +1,8 @@
 package org.example.lesson_4
-    const val HUMIDITY_THRESHOLD = 20
-    const val DEFAULT_SEASON = "Winter"
+
+const val HUMIDITY_THRESHOLD = 20
+const val DEFAULT_SEASON = "Winter"
+
 fun main() {
     val isSunny = true
     val isOpened = true
