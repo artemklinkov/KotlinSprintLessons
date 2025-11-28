@@ -1,12 +1,13 @@
 package org.example.lesson5
 
 fun main() {
-    val a = (0..10).random()
-    val b = (0..10).random()
+    val firstOperand = (0..10).random()
+    val secondOperand = (0..10).random()
 
-    println("Для продолжения решите математическую задачу: $a + $b = ?")
+    println("Для продолжения решите математическую задачу: " +
+            "$firstOperand + $secondOperand = ?")
     val userAnswer = readln().toInt()
-    val correctAnswer = a + b
+    val correctAnswer = firstOperand + secondOperand
 
     if (userAnswer == correctAnswer) {
         println("Добро пожаловать!")
