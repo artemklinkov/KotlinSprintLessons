@@ -1,10 +1,15 @@
 package org.example.lesson5
 
+import kotlin.random.Random
+
 fun main() {
-    println("Для продолжения решите математическую задачу: 2 + 3 = ?")
+    val a = Random.nextInt(0, 10)
+    val b = Random.nextInt(0, 10)
+
+    println("Для продолжения решите математическую задачу: $a + $b = ?")
     val userAnswer = readln().toInt()
-    val correctAnswer = 5
-    if (userAnswer ==  correctAnswer) {
+    val correctAnswer = a + b
+    if (userAnswer == correctAnswer) {
         println("Добро пожаловать!")
     } else {
         println("Доступ запрещен!")
